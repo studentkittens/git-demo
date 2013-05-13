@@ -5,7 +5,7 @@
 #include "is_odd.h"
 
 int main(int argc, char *argv[]) {
-    printf("Odd numbers of arguments? %d!\n",
+    printf("Odd numbers of arguments? %s!\n",
         is_odd(argc - 1) ? "Yes" : "No");
     return EXIT_SUCCESS;
 }
