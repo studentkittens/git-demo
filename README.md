@@ -1,4 +1,4 @@
 git-demo
 ========
 
-Cloud Workshop
+Cloud Workshop mit C-Test Programm.
