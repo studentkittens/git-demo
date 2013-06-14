@@ -2,5 +2,5 @@
 
 
 bool is_odd(int number) {
-    return number % 2; /* Wrong! */
+    return !number % 2; /* Wrong! */
 }
