@@ -1,4 +1,4 @@
-all: test_is_odd.o main.o
+all: clean test_is_odd.o main.o
 
 test_is_odd:  $(OBJECTS)
 		 @$(CC) $(OBJECTS) -o $@ $(LDFLAGS) 
@@ -12,9 +12,9 @@ test_is_odd.o: is_odd.o
 is_odd.o:
 		$(CC) -c src/is_odd.c -o is_odd.o
 
-test: test_is_odd.o
+test: all test_is_odd.o
 		@echo "Executing tests:"
 		./test_is_odd
 
 clean:
-	rm *.o
+	find . -iname "*.o" -delete
